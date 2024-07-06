@@ -97,6 +97,58 @@ git commit -m "deleted file in dir"
 git status
 git push
 
+======================
+Branch
+------
+git branch
+git branch release1
+git checkout release1
+git checkout main
+git merge branch-name
+
+------------------------
+Touch, CAT, Echo, VI
+------------------------
+touch
+-----
+touch file1
+touch file2 file3
+
+CAT
+---
+cat > file4
+.....
+.....
+ctrl+d
+
+cat file-name
+
+
+cat >> file-name
+....
+....
+ctrl+d
+
+ECHO
+====
+echo "hello all" > file-name
+
+VI
+==
+vi file6
+--------
+esc i
+....
+....
+....
+
+esc :w!
+    :q!
+or
+esc :wq!
+
+
+
 
 
 
