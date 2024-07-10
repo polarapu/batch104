@@ -1,0 +1,80 @@
+git init - Initial set up of Git
+
+git config --global user.name "ahemad baba"
+git config --global user.email "ahemad.devops@gmail.com"
+
+git config --list -> to know about the config details
+
+To remove configuration:
+git config --global --unset user.name
+git config --global --unset user.email
+
+To Close from GitHub
+git clone https://github.com/ahemaddevops/repo1.git
+
+cd .. --> back step to previous folder
+
+Git Flow:
+WorkSpace
+Staging/Index
+Local Repo
+
+WorkSpace :
+touch file 1 --> create a file
+git status -> to know about the list of file in workspace and it will be in red colour
+
+git add filename --> --> To move the all the files from WorkSpace to Staging/Index Area
+git add . -->  To move the all the files from WorkSpace to Staging/Index Area
+In the Staging/Index are a files will be green colour
+
+git commit -m "Message" Filename --> To move the file from Staging/Index Area to Local repository
+
+touch file1 file2 file3 file4 --> create multiple files
+
+git commit -m "label" --> Commit all the files
+
+git log
+git show
+
+rm filename ->to delete a file
+git add file --> move to staging/index area
+git commit -m "Mesage" deletedfilename --> moving to local repo
+git push --> Uploading to the GitHub
+
+q ==> exit/quit in git log if more than one page 
+
+Any file 3 stages
+Workspace ==> Staging/Index ==> Local Repository
+
+mkdir filename ==> to create a directory
+git status --> you won't show anything until create any files
+create files
+git add -> add files and git commit -m "sample message" commit files and push 
+
+Branches:
+=========
+git branch branchname --> to create a branch
+git branch --> to view the branches
+
+git checkout branchname --> enter into the branch
+
+git merge ==> to merge from the main branch or any branch to required branch
+
+Touch, CAT, Echo, VI
+Touch ==> To create empty files
+CAT ==> Create File and add the data (cat > file name and enter data and then ctrl+d)
+
+vi filename ==> it will open a new window
+esc i ==> to insert data in the file
+: w => save file
+: q => exit file
+: wq! => save & exit file
+
+delete branches
+git branch -d branchname
+move to other branch and delete the branch. can't delete branches in the same branch
+git branch -D branch => if unmoved data then delete without merging the data/files
+
+git push origin branchname / git push path ==> upload branches to GitHub:
+
+git pull --rebase ==> you will get branches to your local repository from GitHub
